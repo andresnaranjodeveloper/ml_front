@@ -1,0 +1,18 @@
+@import './../../assets/sass/colors';
+//* items
+$items-background-color: map-get($ml-colors, 'white');
+$items-border-radius: 4px;
+
+//* Item
+$item-border-bottom: 1px solid map-get($ml-colors, 'grey', 'lighten');
+$item-nth-last-child-border-bottom: none;
+$item-img-border-radius: 4px;
+$item-img-img-width: 180px;
+$item-img-img-height: 180px;
+$item-img-img-border-radius: $item-img-border-radius;
+$item-description-width: 100%;
+$item-descriptionitem-header-flex-wrap: wrap;
+$item-descriptionitem-header-h2-a-color: map-get($ml-colors, 'black');
+$item-descriptionitem-body-p-text-align: justify;
+$item-descriptionitem-body-p-a-color: map-get($ml-colors, 'black');
+$item-media-576-flex-wrap: wrap;

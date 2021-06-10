@@ -1,0 +1,10 @@
+@import './../../assets/sass/colors';
+$detail-background-color: map-get($ml-colors, 'white');
+$detail-border-radius: 4px;
+$detail-justify-content: space-between;
+$detail-flex-wrap: wrap;
+$detail-img-img-max-width: 100%;
+$detail-img-img-width: 680px;
+$detail-img-img-border-radius: 4px;
+$detail-info-h1-font-size: 1.5rem;
+$detail-info-h2-font-size: 1.75rem;

@@ -1,0 +1,101 @@
+//* Generando estilos de columnas
+@mixin cols(){
+  $col: (100 /12);
+  @for $i from 1 to 13 {
+    .col-#{$i} {
+      flex: 0 0 auto;
+      width: ($col * $i) * 1%;
+    }
+    @media screen and (max-width: 992px) {
+      .col-lg-#{$i} {
+        width: ($col * $i) * 1% !important;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-md-#{$i} {
+        width: ($col * $i) * 1% !important;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .col-sm-#{$i} {
+        width: ($col * $i) * 1% !important;
+      }
+    }
+  }
+}
+
+//* Generando compensación de columnas
+@mixin offset(){
+  $col: (100 /12);
+  @for $i from 1 to 12 {
+    .offset-#{$i} {
+      margin-left: ($col * $i) * 1%;
+    }
+    @media screen and (max-width: 768px) {
+      .offset-#{$i} {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+//* Generando las brechas entre columnas
+@mixin gaps($gaps){
+  @each $key, $val in $gaps {
+    .gap-#{$key} {
+      gap: $val;
+    }
+  }
+}
+
+//* Generando los margin y padding
+@mixin mp($gaps){
+  @each $key, $val in $gaps {
+    .m-#{$key} {
+      margin: $val;
+    }
+    .p-#{$key} {
+      padding: $val;
+    }
+    .mt-#{$key} {
+      margin-top: $val;
+    }
+    .pt-#{$key} {
+      padding-top: $val;
+    }
+    .mr-#{$key} {
+      margin-right: $val;
+    }
+    .pr-#{$key} {
+      padding-right: $val;
+    }
+    .mb-#{$key} {
+      margin-bottom: $val;
+    }
+    .pb-#{$key} {
+      padding-bottom: $val;
+    }
+    .ml-#{$key} {
+      margin-left: $val;
+    }
+    .pl-#{$key} {
+      padding-left: $val;
+    }
+    .mx-#{$key} {
+      margin-right: $val;
+      margin-left: $val;
+    }
+    .px-#{$key} {
+      padding-right: $val;
+      padding-left: $val;
+    }
+    .my-#{$key} {
+      margin-top: $val;
+      margin-bottom: $val;
+    }
+    .py-#{$key} {
+      padding-top: $val;
+      padding-bottom: $val;
+    }
+  }
+}

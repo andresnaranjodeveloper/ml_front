@@ -1,0 +1,88 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: $global-margin;
+  padding: $global-padding;
+  outline: $global-outline;
+  box-sizing: $global-box-sizing;
+}
+
+body {
+  @extend %font;
+  @extend %scroll;
+  background-color: $body-background-color;
+}
+
+.container {
+  margin: $container-margin;
+  max-width: $container-max-width;
+  width: $container-width;
+  display: $container-display;
+  flex-wrap: $container-flex-wrap;
+}
+
+@include cols();
+@include offset();
+
+.d-flex {
+  display: $d-flex-display;
+}
+
+@include gaps($gaps);
+@include mp($m-p);
+
+.justify-content-start {
+  justify-content: $justify-content-start-justify-content;
+}
+.justify-content-center {
+  justify-content: $justify-content-center-justify-content;
+}
+.justify-content-end {
+  justify-content: $justify-content-end-justify-content;
+}
+
+.align-items-start {
+  align-items: $align-items-start-align-items;
+}
+.align-items-center {
+  align-items: $align-items-center-align-items;
+}
+.align-items-end {
+  align-items: $align-items-end-align-items;
+}
+
+a {
+  text-decoration: $link-text-decoration;
+  @extend %link;
+  &:hover {
+    @extend %link;
+  }
+  &:link {
+    @extend %link;
+  }
+  &:hover {
+    color: $link-hover-color;
+  }
+  &:active {
+    @extend %link;
+  }
+}
+
+.loading {
+  width: $loading-width;
+}
+
+@media screen and (max-width: 992px) {
+  .col-md-auto {
+    flex: $media-992-col-md-auto-flex;
+    width: $media-992-col-md-auto-width;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .justify-content-md-center {
+    justify-content: $media-768-justify-content-md-center-justify-content;
+  }
+}

@@ -1,0 +1,26 @@
+@import './variables';
+.breadcrumb {
+  li {
+    list-style: $breadcrumb-li-list-style;
+    display: $breadcrumb-li-display;
+    font-size: $breadcrumb-li-font-size;
+    color: $breadcrumb-li-color;
+    &:nth-last-child(1) {
+      .chevron {
+        display: $breadcrumb-li-nth-last-child-chevrondisplay;
+      }
+    }
+    .chevron {
+      margin: $breadcrumb-li-chevron-margin;
+      padding: $breadcrumb-li-padding;
+      display: $breadcrumb-li-display;
+      float: $breadcrumb-li-float;
+      stroke-width: $breadcrumb-li-stroke-width;
+      width: $breadcrumb-li-width;
+      height: $breadcrumb-li-height;
+      -webkit-transform: $breadcrumb-li-webkit-transform;
+      transform: $breadcrumb-li-transform;
+      stroke: $breadcrumb-li-stroke;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import './variables';
+@import './colors';
+//* Fonts
+%font {
+  font-family: $fonts-font-family;
+  font-size: $fonts-font-size;
+}
+
+%scroll {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: $scroll-webkit-box-shadow;
+    border-radius: $scroll-border-radius;
+    background-color: $scroll-background-color;
+  }
+  &::-webkit-scrollbar {
+    width: $scroll-width;
+    background-color: $scroll-background-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: $scroll-webkit-box-shadow;
+    border-radius: $scroll-border-radius;
+    background-color: $scroll-background-color;
+  }
+}
+
+%link {
+  color: $link-color;
+}

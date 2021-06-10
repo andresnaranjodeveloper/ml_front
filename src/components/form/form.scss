@@ -1,0 +1,30 @@
+@import './variables';
+form {
+  width: $form-width;
+  .search {
+    width: $form-search-width;
+    background-color: $form-search-background-color;
+    justify-content: $form-search-justify-content;
+    border-radius: $form-search-border-radius;
+    input[type=text] {
+      padding: $form-search-input-padding;
+      border: $form-search-input-border;
+      border-top-left-radius: $form-search-input-border-top-left-radius;
+      border-bottom-left-radius: $form-search-input-border-bottom-left-radius;
+      width: $form-search-input-width;
+    }
+    button {
+      background-color: $form-search-button-background-color;
+      border: $form-search-button-border;
+      border-top-right-radius: $form-search-button-border-top-right-radius;
+      border-bottom-right-radius: $form-search-button-border-bottom-right-radius;
+      & > div {
+        width: $form-search-button-div-width;
+        height: $form-search-button-div-height;
+        background-image: $form-search-button-div-background-image;
+        background-repeat: $form-search-button-div-background-repeat;
+        background-position: $form-search-button-div-background-position;
+      }
+    }
+  }
+}

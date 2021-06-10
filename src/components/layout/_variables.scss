@@ -1,0 +1,40 @@
+@import './../../assets/sass/colors';
+@import './../../assets/sass/gap';
+@import './../../assets/sass/placeholder';
+@import './../../assets/sass/mixin';
+
+//* Global
+$global-margin: 0;
+$global-padding: 0;
+$global-outline: none;
+$global-box-sizing: border-box;
+
+//* Body
+$body-background-color: map-get($ml-colors, 'grey', 'lighten' );
+
+//* Container and Colums
+$container-margin: 0 auto;
+$container-max-width: 1200px;
+$container-width: 100%;
+$container-display: flex;
+$container-flex-wrap: wrap;
+
+$d-flex-display: flex;
+
+$justify-content-start-justify-content: flex-start;
+$justify-content-center-justify-content: center;
+$justify-content-end-justify-content: flex-end;
+$align-items-start-align-items: flex-start;
+$align-items-center-align-items: center;
+$align-items-end-align-items: flex-end;
+//* Link
+$link-text-decoration: none;
+$link-hover-color: map-get($ml-colors, "grey", "darken");
+
+//* Loading
+$loading-width: 100%;
+
+//* Media
+$media-992-col-md-auto-flex: 0 0 auto;
+$media-992-col-md-auto-width: auto;
+$media-768-justify-content-md-center-justify-content: center;

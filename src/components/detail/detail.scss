@@ -1,0 +1,22 @@
+@import './variables';
+.detail {
+  background-color: $detail-background-color;
+  border-radius: $detail-border-radius;
+  justify-content: $detail-justify-content;
+  flex-wrap: $detail-flex-wrap;
+  .img {
+    img {
+      max-width: $detail-img-img-max-width;
+      width: $detail-img-img-width;
+      border-radius: $detail-img-img-border-radius;
+    }
+  }
+  .info {
+    h1 {
+      font-size: $detail-info-h1-font-size;
+    }
+    h2 {
+      font-size: $detail-info-h2-font-size;
+    }
+  }
+}
