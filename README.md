@@ -72,6 +72,9 @@ Abra [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
   │   │   ├── search
   │   │   │   ├── Search.jsx
   │   │   │   └── ...
+  │   │   ├── seo
+  │   │   │   ├── Seo.jsx
+  │   │   │   └── ...
   │   │   └── ...
   │   ├── config
   │   │   ├── axios.jsx

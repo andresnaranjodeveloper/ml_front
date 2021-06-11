@@ -5,6 +5,7 @@ import NumberFormat from "react-number-format";
 import SearchContext from "./../../context/search/searchContext";
 
 //* Components
+import SEO from "../seo/Seo";
 import Layout from "../layout/Layout";
 import Breadcrumb from "./../breadcrumb/Breadcrumb";
 
@@ -31,6 +32,7 @@ const Detail = (props) => {
           <div className="detail d-flex col-10 offset-1 p-3 gap-3">
             {itemInfo ? (
               <>
+                <SEO title={`${itemInfo.title} | Mercado Libre`} description={itemInfo.description} url={props.location.pathname} product={itemInfo} /> 
                 <div className="img col-8 col-md-12">
                   <img src={itemInfo.picture} alt="" />
                 </div>
