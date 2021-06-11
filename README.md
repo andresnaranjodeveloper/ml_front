@@ -6,6 +6,11 @@ En la terminal del proyecto, puede ejecutar:
 
 ## `npm start`
 
+Para construir el sitio y así subirlo, puede ejecutar:
+## `npm run build`
+
+Dentro del proyecto se creara el directorio *build*, el cual puede copiarlo y subirlo al servidor de producción.
+
 Ejecuta la aplicación bajo el puerto 3000.
 Abra [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
 
